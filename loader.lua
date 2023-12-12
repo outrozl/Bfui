@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = {"3943849183213213w5655dffhgy "} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       Key = {"3943849183213213w5655dffhgy"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
 
@@ -61,13 +61,6 @@ local Button = Tab:CreateButton({
     end,
 })
 
-local Button = Tab:CreateButton({
-    Name = "Fai Fao (¿WTF?)",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua"))()
-    end,
-})
-
 local Tab2 = Window:CreateTab("Scripts", 6034275725) -- Title, Image
 
 local Section = Tab2:CreateSection("Scripts")
@@ -97,6 +90,20 @@ local Button = Tab2:CreateButton({
     Name = "MTriet Hub",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+    end,
+})
+
+local Button = Tab2:CreateButton({
+    Name = "Fai Fao (¿WTF?)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua"))()
+    end,
+})
+
+local Button = Tab2:CreateButton({
+    Name = "ZenHub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
     end,
 })
 
