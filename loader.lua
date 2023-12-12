@@ -61,6 +61,13 @@ local Button = Tab:CreateButton({
     end,
 })
 
+local Button = Tab:CreateButton({
+    Name = "Fai Fao (¿WTF?)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua"))()
+    end,
+})
+
 local Tab2 = Window:CreateTab("Scripts", 6034275725) -- Title, Image
 
 local Section = Tab2:CreateSection("Scripts")
@@ -76,6 +83,20 @@ local Button = Tab2:CreateButton({
     Name = "HoHo Hub",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end,
+})
+
+local Button = Tab2:CreateButton({
+    Name = "RedZHub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+    end,
+})
+
+local Button = Tab2:CreateButton({
+    Name = "MTriet Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
     end,
 })
 
@@ -131,3 +152,5 @@ local Button = Tab3:CreateButton({
         })
     end,
 })
+
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/outrozl/Bfui/main/loader.lua'))()
